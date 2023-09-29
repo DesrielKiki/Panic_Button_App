@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="poppins8">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+    <style name="poppins10">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="poppins12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+    <style name="poppins12BottomActive">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="poppins12BottomInActive">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="selectedTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="paddingStart">@dimen/_24sdp</item>
+        <item name="paddingEnd">@dimen/_24sdp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppin32">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/_32ssp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="poppins10SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins14SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins18SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins20SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="poppins22SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_22ssp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="poppins24SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="poppins32SemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_32ssp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="poppins14Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins12Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins14Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="poppins16Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+    <style name="poppins20Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <dimen name="tab1_width">53dp</dimen>
+    <dimen name="tab2_width">133dp</dimen>
+
+</resources>

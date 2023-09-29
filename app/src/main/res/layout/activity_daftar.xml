@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_24sdp"
+        tools:context=".ui.login.daftar.DaftarActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/poppins24SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableEnd="@drawable/ic_person"
+                    android:drawableTint="@color/grey"                    android:singleLine="true"
+                    android:inputType="text"
+                    android:hint="Masukkan Nama Lengkap"
+                    android:paddingStart="@dimen/_24sdp"
+                    android:paddingEnd="@dimen/_24sdp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:drawableTint="@color/grey"
+                    android:singleLine="true"
+                    android:inputType="number"
+
+                    android:hint="Masukkan Nomor Telepon"
+                    android:paddingStart="@dimen/_24sdp"
+                    android:paddingEnd="@dimen/_24sdp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:drawableTint="@color/grey"
+                    android:hint="Masukkan Email"
+                    android:paddingStart="@dimen/_24sdp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+
+                    android:paddingEnd="@dimen/_24sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="@dimen/_2sdp" />
+
+                    <TextView
+                        style="@style/poppins12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_toEndOf="@id/checkbox"
+                        android:text="@string/persetujuan" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_daftar"
+                style="@style/poppins14SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient_red"
+                android:text="Daftar"
+                app:backgroundTint="@null"/>
+            <TextView
+                android:id="@+id/tv_sudahPunyaAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/poppins12"
+                android:layout_marginTop="24dp"
+                android:text="@string/sudah_punya_akun_masuk"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

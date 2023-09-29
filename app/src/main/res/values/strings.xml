@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Panic Button App</string>
+    <string name="title_home">Home</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_profile">Profile</string>
+    <string name="empty_panic_button">Saat ini belum ada panic button yang terdaftar. Mohon segera mendaftarkan panic button Anda untuk memastikan keamanan yang lebih baik</string>
+    <string name="panic_button_title">Panic Button</string>
+    <string name="welcome_home">Selamat Datang,</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet. Et soluta atque qui voluptatem earum ut minima suscipit et rerum obcaecati eos dolorum fugit! Sit voluptatum labore et fugit officia sed asperiores omnis ut alias consequuntur At placeat quia qui aliquid illo. Et doloribus esse et nostrum galisum sed fugit possimus ut similique laborum qui voluptatum rerum! Aut deleniti sunt ut magnam maxime qui esse ipsa qui culpa sunt quo nesciunt dolorem! Et obcaecati tempora et corporis iste et error quia id laudantium itaque. Sed pariatur dicta est similique quibusdam et dolorum commodi. Id ducimus incidunt cum eligendi delectus est eligendi quis sit tempora suscipit et magni error. Vel ipsa molestiae non optio maxime non minima dolor est sunt autem ut excepturi similique et ducimus voluptates et voluptas pariatur.</string>
+    <string name="title_activity_detail_tagihan">DetailTagihanActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="menunggu_pembayaran">Menunggu Pembayaran</string>
+    <string name="menunggu_pembayaran_sub">Silahkan lakukan pembayaran tagihan paling lambat 13 agustus 2023 17:16</string>
+    <string name="pembayaran_selesai_sub">Terima kasih sudah melakukan pembayaran. Kamu dapat menghubungi bantuan apabila terjadi masalah terkait pembayaran</string>
+    <string name="pembayaran_selesai">Pembayaran Selesai</string>
+    <string name="pembayaran_pending">Ups! Pembayaran Anda Pending</string>
+    <string name="pembayaran_pending_sub">Pembayaran Anda mengalami status pending. Mohon tunggu informasi lebih lanjut</string>
+    <string name="tagihan_kadaluarsa">Ups! Tagihan Kedalulwarsa</string>
+    <string name="tagihan_kadaluarsa_sub">Pembayaran tidak dapat dilakukan. Harap hubungi Layanan Pelanggan kami untuk bantuan lebih lanjut. Terima kasih</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="persetujuan">Dengan mendaftar, Anda dianggap telah menyetujui <font color="#428EFF"> syarat &amp; ketentuan </font> dan <font color="#428EFF"> kebijakan privasi </font>  kami</string>
+    <string name="sudah_punya_akun_masuk"><font color="#989898">Sudah punya akun?</font> <font color="#428EFF">Masuk</font></string>
+    <string name="belum_punya_akun"><font color="#989898">Belum punya akun?</font> <font color="#428EFF">Daftar</font></string>
+</resources>

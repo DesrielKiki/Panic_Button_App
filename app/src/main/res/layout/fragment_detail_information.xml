@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_24sdp"
+        android:paddingEnd="@dimen/_24sdp"
+        tools:context=".ui.home.information.fragment.DetailInformationFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_InformationTitle"
+                style="@style/poppins14SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_24sdp"
+                android:gravity="center_horizontal"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+
+            <ImageView
+                android:id="@+id/iv_informationDetail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_174sdp"
+                android:layout_marginBottom="@dimen/_24sdp"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/poppins12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

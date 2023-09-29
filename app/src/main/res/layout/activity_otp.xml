@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_24sdp"
+    tools:context=".ui.otp.OtpActivity">
+
+    <ImageView
+        android:id="@+id/iv_otpImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_otp" />
+
+    <LinearLayout
+        android:id="@+id/bg_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_otpImage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_masukkanOtp"
+            style="@style/poppins24SemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_otpImage"
+            android:text="Masukkan OTP" />
+
+        <TextView
+            style="@style/poppins12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_masukkanOtp"
+            android:text="Silakan masukkan 6 digit kode yang telah kami kirimkan melalui nomor telepon +62 xxx-xxxx-4567"
+            android:textColor="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tv_otp1"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/bg_otp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/tv_otp2"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="@dimen/_12sdp"
+
+                android:background="@drawable/bg_otp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/tv_otp3"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/bg_otp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/tv_otp4"
+
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/bg_otp"
+                android:gravity="center"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/tv_otp5"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="@dimen/_12sdp"
+
+                android:background="@drawable/bg_otp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/tv_otp6"
+                android:layout_width="47dp"
+
+                android:layout_height="47dp"
+                android:background="@drawable/bg_otp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg_otp"
+        android:layout_marginTop="@dimen/_32sdp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_kirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_red"
+            android:text="Kirim"
+            android:textAppearance="@style/poppins14SemiBold"
+            app:backgroundTint="@null" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_kirim"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_24sdp">
+
+            <TextView
+                style="@style/poppins12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_kirim"
+                android:layout_centerHorizontal="true"
+                android:text="Tidak Mendapatkan Kode? "
+                android:textColor="@color/grey" />
+
+            <TextView
+                style="@style/poppins12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 00:10"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

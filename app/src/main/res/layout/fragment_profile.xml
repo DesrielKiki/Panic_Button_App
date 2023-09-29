@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bg_headerProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_196sdp"
+            android:layout_marginTop="-35dp"
+            android:background="@drawable/bg_profile"
+            android:backgroundTint="@color/red"
+            app:cardCornerRadius="@dimen/_32sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title_profile"
+                    style="@style/poppins16Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_profile"
+                    android:layout_centerHorizontal="true"
+                    android:text="PROFIL"
+                    android:textColor="@color/white" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_centerInParent="true"
+                    tools:src="@tools:sample/avatars" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_userName"
+                        style="@style/poppins14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="John Doe"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_userNumber"
+                        style="@style/poppins12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_userName"
+                        android:text="+62 812-3456-789"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/bg_dataDiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_headerProfile"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_24sdp">
+
+            <TextView
+                android:id="@+id/title_dataDiri"
+                style="@style/poppins14SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:text="Data Diri" />
+
+            <RelativeLayout
+                android:id="@+id/bg_namaUser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_below="@id/title_dataDiri">
+
+                <TextView
+                    android:id="@+id/title_nama"
+                    style="@style/poppins12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama" />
+
+                <TextView
+                    android:id="@+id/tv_namaUser"
+                    style="@style/poppins12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_toStartOf="@id/btn_next_nama"
+                    android:layout_toEndOf="@id/title_nama"
+                    android:gravity="end"
+                    android:text="John Doe" />
+
+                <ImageView
+                    android:id="@+id/btn_next_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_next" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bg_namaUser"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/bg_userNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_below="@id/separator1">
+
+                <TextView
+                    android:id="@+id/title_number"
+                    style="@style/poppins12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. Seluler" />
+
+                <TextView
+                    android:id="@+id/tv_noSeluler"
+                    style="@style/poppins12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_toStartOf="@id/btn_next_number"
+                    android:layout_toEndOf="@id/title_number"
+                    android:gravity="end"
+                    android:text="+62 812-3456-789" />
+
+                <ImageView
+                    android:id="@+id/btn_next_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_next" />
+            </RelativeLayout>
+
+            <View
+                android:id="@id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bg_userNumber"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/bg_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_below="@id/separator2"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp">
+
+                <TextView
+                    android:id="@+id/title_email"
+                    style="@style/poppins12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/tv_userEmail"
+                    style="@style/poppins12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_toStartOf="@id/btn_next_email"
+                    android:layout_toEndOf="@id/title_email"
+                    android:gravity="end"
+                    android:text="Johndoe@loremipsum.com" />
+
+                <ImageView
+                    android:id="@+id/btn_next_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_next" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bg_email"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/btn_Bantuan"
+                style="@style/poppins14SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator3"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="Bantuan" />
+
+            <TextView
+                android:id="@+id/btn_kebijakanPrivasi"
+                style="@style/poppins14SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Bantuan"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="Kebijakan Privasi" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bg_dataDiri"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/bg_button_red"
+            android:drawableEnd="@drawable/ic_logout"
+            android:text="KELUAR"
+            android:textAppearance="@style/poppins12Bold"
+            app:backgroundTint="@color/red" />
+
+    </RelativeLayout>
+</ScrollView>

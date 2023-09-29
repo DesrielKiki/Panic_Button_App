@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_24sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bg_ivToko"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_85sdp"
+        app:cardCornerRadius="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/iv_toko"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_map" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_namaToko"
+        style="@style/poppins14SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_toEndOf="@id/bg_ivToko"
+        android:text="Toko Jaya Abadi" />
+
+    <TextView
+        android:id="@+id/tv_hargaTagihan"
+        style="@style/poppins12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_namaToko"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_toEndOf="@id/bg_ivToko"
+        android:text="Rp 200.000,-"
+        android:textColor="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hargaTagihan"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_toEndOf="@id/bg_ivToko">
+
+        <ImageView
+            android:id="@+id/iv_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_pin" />
+
+        <TextView
+            android:id="@+id/tv_alamatToko"
+            style="@style/poppins8"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@id/iv_pin"
+            android:text="Jl. Sentyaki Raya No.7, Bulu Lor"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_subAlamatToko"
+            style="@style/poppins8"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamatToko"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@id/iv_pin"
+            android:text="Kota Semarang, Jawa Tengah 50179"
+            android:textColor="@color/grey" />
+    </RelativeLayout>
+</RelativeLayout>

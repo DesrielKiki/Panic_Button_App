@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_24sdp"
+        tools:context=".ui.login.daftar.DaftarActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/poppins24SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:drawableTint="@color/grey"
+                    android:hint="Masukkan Nomor Telepon"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/_24sdp"
+                    android:paddingEnd="@dimen/_24sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_masuk"
+                style="@style/poppins14SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient_red"
+                android:text="Masuk"
+                app:backgroundTint="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atau"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_google"
+                    style="@style/poppins14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Masuk dengan Google"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:background="@drawable/btn_google"
+                    app:backgroundTint="@null"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_belumPunyaAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/poppins12"
+                android:layout_marginTop="24dp"
+                android:text="@string/belum_punya_akun"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

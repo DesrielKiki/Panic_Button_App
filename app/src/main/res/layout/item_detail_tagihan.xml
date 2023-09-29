@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_16sdp"
+    android:layout_marginStart="@dimen/_24sdp"
+    android:layout_marginEnd="@dimen/_24sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/bg_titleTagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/bg_kodeTagihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_kodeTagihan"
+                    style="@style/poppins12Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GG93FRIU "
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_tipeTagihan"
+                    style="@style/poppins12"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/tv_statusTagihan"
+                    android:layout_toEndOf="@id/tv_kodeTagihan"
+                    android:text="- Perpanjangan Otomatis " />
+
+                <TextView
+                    android:id="@+id/tv_statusTagihan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_corner_orange"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:singleLine="true"
+                    style="@style/poppins8"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="Menunggu" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tanggalTagihan"
+                style="@style/poppins10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bg_kodeTagihan"
+                android:text="12 Agustus 2023, 17:15:34"
+                android:textColor="@color/grey" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detailTagihan"
+            android:layout_width="324dp"
+            android:layout_height="182dp"
+            android:layout_below="@id/bg_titleTagihan"
+            android:layout_marginBottom="@dimen/_24sdp"
+            tools:listitem="@layout/item_tagihan" />
+
+        <RelativeLayout
+            android:id="@+id/bg_totalBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_detailTagihan"
+            android:background="@drawable/bg_stroke"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/jumlah_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/poppins10"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/tv_totalTagihan"
+                android:text="Jumlah Yang Harus Dibayar : " />
+
+            <TextView
+                android:id="@+id/tv_totalTagihan"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/red"
+                style="@style/poppins10"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="Rp406.000,-" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/bg_totalBayar">
+
+            <TextView
+                android:id="@+id/tv_jatuhTempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/poppins8"
+                android:layout_toStartOf="@id/btn_bayar"
+                android:textColor="@color/grey"
+                android:text="Bayar Sebelum  13 Agustus 2023, Pukul 17:16" />
+
+            <Button
+                android:id="@+id/btn_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                style="@style/poppins10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Bayar Sekarang" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

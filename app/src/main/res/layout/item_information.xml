@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bg_ivInformation"
+            android:layout_width="@dimen/_73sdp"
+            android:layout_height="@dimen/_89sdp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/iv_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                tools:src="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_titleInformation"
+            style="@style/poppins16Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/bg_ivInformation"
+            android:text="Lorem Ipsum" />
+
+        <TextView
+            android:id="@+id/tv_informationBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titleInformation"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/bg_ivInformation"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/lorem_ipsum" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
